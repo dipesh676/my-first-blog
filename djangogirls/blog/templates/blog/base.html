@@ -9,15 +9,17 @@
 </head>
 <body>
     <div class="page-header">
+{% if user.is_authenticated %}
+    <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+{% endif %}
         <h1><a href="/">Blog by MrznDipesh</a></h1>
+
+
     </div>
 <br>
 <p><em> <marquee><h3>I am Dipesh Mrzn !!! I want to get it to work.. :) </marquee> </em>
 <br>
-<div class="page-header">
-	<p><h2> Hi There! </p>
-	<p><h3>It works! </p>
-</div>
+
 <div>
 	
 	<strong><p> This is my first blog using python and Django </strong>
