@@ -18,6 +18,18 @@
 <p> Talking about thing that matter to me
 <p><ul><li>Family</li><li>Shortlisted Friends</li><li>Laptop</li><li>Me Myself</li></ul>
 </div>
+<div><br><br><br>
+<p><h1>Posts</p>
+</div>
+{% for post in posts %}
+    <div>
+       
+        <h1><a href="">{{ post.title }}</a></h1>
+        <p>{{ post.text|linebreaksbr }}</p>
+<p>published: {{ post.published_date }}</p>
+    </div>
+{% endfor %}
+
 
 
 </body>
